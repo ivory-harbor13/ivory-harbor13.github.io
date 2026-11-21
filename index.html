@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极品在线反差_影像社区|专业反差内容平台</title>
+<meta name="description" content="极品在线反差官方网站：深耕反差风格影像内容的专业视频品牌，汇聚原创创作者与精品内容，打造值得信赖的内容生态社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1424'/%3E%3Cpath d='M18 46 L32 16 L46 46 Z' fill='none' stroke='%2300e5a0' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='38' r='4' fill='%23ff4d6d'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --fx-bg:#0f1424;
+    --fx-bg2:#151c31;
+    --fx-card:#1b2338;
+    --fx-card2:#212b44;
+    --fx-line:rgba(255,255,255,.09);
+    --fx-text:#eef2fb;
+    --fx-sub:#9aa7c2;
+    --fx-mint:#00e5a0;
+    --fx-pink:#ff4d6d;
+    --fx-violet:#8b7bff;
+    --fx-radius:16px;
+    --fx-shadow:0 14px 40px rgba(0,0,0,.38);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:132px}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(139,123,255,.18), transparent 60%),
+      radial-gradient(900px 500px at 0% 10%, rgba(0,229,160,.12), transparent 55%),
+      var(--fx-bg);
+    color:var(--fx-text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  ::selection{background:var(--fx-mint);color:#0b0f1a}
+
+  .fx-wrap{width:min(1180px,92vw);margin:0 auto}
+
+  /* ===== 吸顶区域：公告条 + 页头 ===== */
+  .fx-sticky{position:sticky;top:0;z-index:90}
+
+  .fx-announce{
+    background:linear-gradient(90deg,#0b1c2a,#132a3f 45%,#1a1a3d);
+    border-bottom:1px solid var(--fx-line);
+    font-size:13.5px;
+  }
+  .fx-announce-inner{
+    display:flex;align-items:center;gap:14px;
+    min-height:42px;padding:8px 0;flex-wrap:wrap;
+  }
+  .fx-announce-badge{
+    flex:0 0 auto;
+    background:var(--fx-mint);color:#08131a;
+    font-weight:700;font-size:12px;letter-spacing:.06em;
+    padding:2px 9px;border-radius:999px;
+  }
+  .fx-announce-list{display:flex;gap:26px;flex:1 1 320px;overflow:hidden;flex-wrap:wrap}
+  .fx-announce-item{
+    color:var(--fx-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    max-width:100%;transition:color .2s;
+  }
+  .fx-announce-item b{color:#c9d6ee;font-weight:600}
+  .fx-announce-item:hover{color:var(--fx-mint)}
+  .fx-announce-more{color:var(--fx-mint);font-size:13px;flex:0 0 auto;border-bottom:1px dashed rgba(0,229,160,.5)}
+
+  .fx-header{
+    background:rgba(13,18,32,.88);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--fx-line);
+  }
+  .fx-header-inner{
+    display:flex;align-items:center;gap:22px;
+    min-height:76px;flex-wrap:wrap;
+  }
+  .fx-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+  .fx-logo-mark{
+    width:38px;height:38px;border-radius:11px;
+    background:linear-gradient(135deg,var(--fx-mint),var(--fx-violet));
+    display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,229,160,.28);
+  }
+  .fx-logo-mark svg{width:22px;height:22px}
+  .fx-logo-txt{font-size:18px;font-weight:800;letter-spacing:.05em}
+  .fx-logo-txt em{font-style:normal;color:var(--fx-mint)}
+  .fx-logo-sub{display:block;font-size:10.5px;letter-spacing:.22em;color:var(--fx-sub);font-weight:500}
+
+  .fx-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+  .fx-nav a{
+    padding:8px 13px;border-radius:10px;font-size:14.5px;color:#c3cfe6;
+    transition:.2s;position:relative;
+  }
+  .fx-nav a:hover,.fx-nav a.fx-nav-on{color:#fff;background:rgba(255,255,255,.07)}
+  .fx-nav a.fx-nav-on::after{
+    content:"";position:absolute;left:13px;right:13px;bottom:2px;height:2px;
+    background:var(--fx-mint);border-radius:2px;
+  }
+
+  .fx-search{position:relative;flex:0 1 250px;min-width:180px}
+  .fx-search input{
+    width:100%;padding:9px 38px 9px 14px;border-radius:11px;
+    background:rgba(255,255,255,.06);border:1px solid var(--fx-line);
+    color:var(--fx-text);font-size:14px;outline:none;transition:.2s;
+  }
+  .fx-search input::placeholder{color:#6f7d99}
+  .fx-search input:focus{border-color:var(--fx-mint);background:rgba(0,229,160,.07)}
+  .fx-search-btn{
+    position:absolute;right:5px;top:50%;transform:translateY(-50%);
+    width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+    color:var(--fx-sub);transition:.2s;
+  }
+  .fx-search-btn:hover{color:var(--fx-mint);background:rgba(0,229,160,.12)}
+  .fx-search-tip{
+    position:absolute;top:calc(100% + 8px);left:0;right:0;
+    background:var(--fx-card2);border:1px solid var(--fx-line);border-radius:12px;
+    box-shadow:var(--fx-shadow);padding:8px;font-size:13.5px;display:none;z-index:30;
+  }
+  .fx-search-tip.fx-open{display:block}
+  .fx-search-tip p{color:var(--fx-sub);padding:5px 8px}
+  .fx-search-tip b{color:var(--fx-mint)}
+
+  .fx-burger{
+    display:none;width:42px;height:42px;border-radius:10px;
+    background:rgba(255,255,255,.06);border:1px solid var(--fx-line);
+    place-items:center;
+  }
+  .fx-burger span{display:block;width:18px;height:2px;background:#dbe4f5;margin:3px auto;border-radius:2px;transition:.2s}
+
+  /* ===== 通用 ===== */
+  .fx-sec{padding:74px 0}
+  .fx-sec-head{max-width:760px;margin-bottom:38px}
+  .fx-kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;letter-spacing:.18em;color:var(--fx-mint);
+    font-weight:700;text-transform:uppercase;margin-bottom:12px;
+  }
+  .fx-kicker::before{content:"";width:22px;height:2px;background:var(--fx-mint);border-radius:2px}
+  .fx-h2{font-size:clamp(24px,3vw,34px);line-height:1.35;font-weight:800;letter-spacing:.01em}
+  .fx-h2 .fx-hl{color:var(--fx-mint)}
+  .fx-sec-desc{color:var(--fx-sub);margin-top:12px;font-size:15px}
+
+  .fx-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:12px;font-size:14.5px;font-weight:600;
+    transition:.22s;border:1px solid transparent;
+  }
+  .fx-btn-primary{background:linear-gradient(135deg,var(--fx-mint),#00b47e);color:#06131a;box-shadow:0 10px 24px rgba(0,229,160,.22)}
+  .fx-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,229,160,.34)}
+  .fx-btn-ghost{border-color:var(--fx-line);color:#d6e0f3;background:rgba(255,255,255,.03)}
+  .fx-btn-ghost:hover{border-color:var(--fx-mint);color:var(--fx-mint)}
+
+  .fx-tag{
+    display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;
+    background:rgba(139,123,255,.16);color:#b9afff;border:1px solid rgba(139,123,255,.28);
+  }
+  .fx-tag-mint{background:rgba(0,229,160,.13);color:#5cf0c4;border-color:rgba(0,229,160,.3)}
+  .fx-tag-pink{background:rgba(255,77,109,.13);color:#ff8ea3;border-color:rgba(255,77,109,.3)}
+
+  /* ===== 首屏 ===== */
+  .fx-hero{padding:64px 0 30px;position:relative;overflow:hidden}
+  .fx-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .fx-hero-badge{
+    display:inline-flex;align-items:center;gap:9px;padding:6px 14px;border-radius:999px;
+    background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.3);
+    color:var(--fx-mint);font-size:12.5px;font-weight:600;letter-spacing:.06em;margin-bottom:20px;
+  }
+  .fx-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--fx-mint);box-shadow:0 0 0 4px rgba(0,229,160,.18)}
+  .fx-h1{
+    font-size:clamp(38px,5.4vw,62px);line-height:1.12;font-weight:900;letter-spacing:.01em;
+    background:linear-gradient(100deg,#ffffff 20%,#9df5d9 55%,#a99bff 90%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .fx-hero-slogan{margin-top:18px;font-size:18.5px;color:#c8d4ea;font-weight:500}
+  .fx-hero-slogan b{color:var(--fx-mint);font-weight:700}
+  .fx-hero-intro{margin-top:18px;color:var(--fx-sub);font-size:15px;max-width:560px}
+  .fx-hero-actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+  .fx-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px;max-width:540px}
+  .fx-stat{padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid var(--fx-line)}
+  .fx-stat-num{font-size:26px;font-weight:800;color:#fff;letter-spacing:.01em}
+  .fx-stat-num span{font-size:14px;color:var(--fx-mint);margin-left:2px}
+  .fx-stat-label{font-size:12.5px;color:var(--fx-sub);margin-top:3px}
+
+  .fx-hero-visual{position:relative}
+  .fx-hero-frame{
+    border-radius:22px;overflow:hidden;border:1px solid var(--fx-line);
+    box-shadow:var(--fx-shadow);background:var(--fx-card);
+  }
+  .fx-hero-frame svg{width:100%;height:auto;display:block}
+  .fx-hero-float{
+    position:absolute;left:-22px;bottom:26px;background:rgba(21,28,49,.94);
+    border:1px solid var(--fx-line);border-radius:14px;padding:12px 16px;display:flex;gap:12px;align-items:center;
+    backdrop-filter:blur(10px);box-shadow:var(--fx-shadow);
+  }
+  .fx-hero-float-mark{
+    width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+    background:rgba(255,77,109,.16);color:var(--fx-pink);
+  }
+  .fx-hero-float h4{font-size:13.5px;font-weight:700}
+  .fx-hero-float p{font-size:11.5px;color:var(--fx-sub)}
+  .fx-hero-ring{
+    position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;
+    border:1px dashed rgba(0,229,160,.35);animation:fxSpin 26s linear infinite;pointer-events:none;
+  }
+  @keyframes fxSpin{to{transform:rotate(360deg)}}
+
+  /* ===== 深度解析 ===== */
+  .fx-analyze{
+    background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));
+    border-top:1px solid var(--fx-line);border-bottom:1px solid var(--fx-line);
+  }
+  .fx-analyze-cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .fx-analyze p{color:var(--fx-sub);font-size:15px;margin-bottom:16px}
+  .fx-analyze p strong{color:#e5ecfa;font-weight:700}
+  .fx-analyze-lead{
+    color:#d8e2f5;font-size:16.5px;line-height:1.85;
+    padding:22px 24px;border-left:3px solid var(--fx-mint);border-radius:0 14px 14px 0;
+    background:rgba(0,229,160,.055);margin-bottom:22px;
+  }
+  .fx-fact-list{list-style:none;display:grid;gap:12px;margin-top:8px}
+  .fx-fact-list li{
+    display:flex;gap:12px;padding:14px 16px;border-radius:12px;
+    background:rgba(255,255,255,.035);border:1px solid var(--fx-line);font-size:14px;color:#cbd7ec;
+  }
+  .fx-fact-list b{color:var(--fx-mint);font-weight:700;flex:0 0 auto}
+
+  /* ===== 视频卡片通用 ===== */
+  .fx-cover{
+    position:relative;border-radius:14px;overflow:hidden;
+    aspect-ratio:16/9;background:var(--fx-card2);
+  }
+  .fx-cover svg{width:100%;height:100%;display:block}
+  .fx-cover::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 45%,rgba(8,11,20,.78));
+  }
+  .fx-cover-tag{
+    position:absolute;left:10px;top:10px;z-index:2;
+    font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;
+    background:rgba(8,13,22,.72);color:var(--fx-mint);border:1px solid rgba(0,229,160,.4);
+    backdrop-filter:blur(6px);
+  }
+  .fx-cover-time{
+    position:absolute;right:10px;bottom:10px;z-index:2;
+    font-size:11.5px;padding:2px 8px;border-radius:6px;
+    background:rgba(8,13,22,.78);color:#dbe4f5;
+  }
+  .fx-cover-play{
+    position:absolute;inset:0;z-index:2;display:grid;place-items:center;
+    opacity:0;transition:.25s;
+  }
+  .fx-cover-play i{
+    width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+    background:rgba(0,229,160,.92);color:#06131a;font-style:normal;font-size:17px;
+    box-shadow:0 8px 22px rgba(0,229,160,.4);
+  }
+  .fx-video-card:hover .fx-cover-play{opacity:1}
+
+  .fx-video-card{
+    background:var(--fx-card);border:1px solid var(--fx-line);border-radius:var(--fx-radius);
+    overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+  }
+  .fx-video-card:hover{
+    transform:translateY(-5px);border-color:rgba(0,229,160,.42);
+    box-shadow:0 18px 42px rgba(0,0,0,.45);
+  }
+  .fx-video-body{padding:16px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .fx-video-title{font-size:16px;font-weight:700;line-height:1.45}
+  .fx-video-desc{font-size:13.5px;color:var(--fx-sub);line-height:1.65;flex:1}
+  .fx-video-meta{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#8391ad}
+  .fx-avatar{
+    width:26px;height:26px;border-radius:50%;flex:0 0 auto;
+    display:grid;place-items:center;font-size:12px;font-weight:800;color:#08131a;
+  }
+  .fx-video-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .fx-video-foot{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:11px;border-top:1px dashed var(--fx-line);font-size:12.5px;color:#8391ad;
+  }
+  .fx-act{display:flex;gap:6px}
+  .fx-act button{
+    display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:9px;
+    background:rgba(255,255,255,.05);color:#a9b6d0;font-size:12.5px;transition:.2s;
+  }
+  .fx-act button:hover{background:rgba(255,255,255,.1);color:#fff}
+  .fx-act button.fx-liked{color:var(--fx-pink);background:rgba(255,77,109,.14)}
+  .fx-act button.fx-saved{color:var(--fx-mint);background:rgba(0,229,160,.14)}
+  .fx-act button.fx-liked svg,.fx-act button.fx-saved svg{fill:currentColor}
+
+  /* 热点大卡 */
+  .fx-focus-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:24px}
+  .fx-focus-main .fx-cover{aspect-ratio:16/9.6}
+  .fx-focus-main .fx-video-title{font-size:21px}
+  .fx-focus-side{display:grid;gap:18px}
+  .fx-focus-mini{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:13px;
+    background:var(--fx-card);border:1px solid var(--fx-line);border-radius:14px;transition:.25s}
+  .fx-focus-mini:hover{border-color:rgba(139,123,255,.5);transform:translateX(4px)}
+  .fx-focus-mini .fx-cover{aspect-ratio:16/10}
+  .fx-focus-mini h4{font-size:14.5px;line-height:1.45;font-weight:700}
+  .fx-focus-mini p{font-size:12.5px;color:var(--fx-sub);margin-top:5px}
+
+  /* 视频流 */
+  .fx-stream{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+  /* 专题 */
+  .fx-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .fx-topic{
+    position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--fx-line);
+    background:var(--fx-card);transition:.28s;min-height:260px;display:flex;align-items:flex-end;
+  }
+  .fx-topic:hover{transform:translateY(-5px);border-color:rgba(0,229,160,.45)}
+  .fx-topic svg{position:absolute;inset:0;width:100%;height:100%}
+  .fx-topic-in{
+    position:relative;z-index:2;padding:22px;
+    background:linear-gradient(180deg,transparent,rgba(8,11,20,.92) 45%);
+    width:100%;
+  }
+  .fx-topic-in h3{font-size:17px;font-weight:800;margin:8px 0 6px}
+  .fx-topic-in p{font-size:13px;color:#b6c2da;line-height:1.6}
+  .fx-topic-status{
+    display:inline-block;margin-top:12px;font-size:12px;color:var(--fx-mint);
+    border:1px solid rgba(0,229,160,.4);border-radius:999px;padding:3px 10px;
+  }
+
+  /* 作者 */
+  .fx-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .fx-creator{
+    background:var(--fx-card);border:1px solid var(--fx-line);border-radius:16px;
+    padding:22px 18px;text-align:center;transition:.26s;cursor:pointer;
+  }
+  .fx-creator:hover{border-color:rgba(139,123,255,.55);transform:translateY(-4px)}
+  .fx-creator-av{
+    width:66px;height:66px;border-radius:50%;margin:0 auto 13px;
+    display:grid;place-items:center;font-size:23px;font-weight:900;color:#08131a;
+    position:relative;
+  }
+  .fx-creator-av::after{
+    content:"";position:absolute;inset:-4px;border-radius:50%;
+    border:1px dashed rgba(0,229,160,.4);
+  }
+  .fx-creator h3{font-size:15.5px;font-weight:800}
+  .fx-creator .fx-c-field{font-size:12.5px;color:var(--fx-mint);margin-top:4px}
+  .fx-creator p{font-size:12.5px;color:var(--fx-sub);margin-top:9px;line-height:1.6;min-height:60px}
+  .fx-creator-stats{
+    display:flex;justify-content:center;gap:16px;margin-top:12px;padding-top:12px;
+    border-top:1px dashed var(--fx-line);font-size:12px;color:#8391ad;
+  }
+  .fx-creator-stats b{display:block;color:#e7eefb;font-size:14.5px}
+
+  /* 随笔 */
+  .fx-essay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .fx-essay{
+    background:linear-gradient(160deg,rgba(139,123,255,.09),rgba(255,255,255,.02));
+    border:1px solid var(--fx-line);border-radius:16px;padding:24px;transition:.24s;
+  }
+  .fx-essay:hover{border-color:rgba(0,229,160,.35)}
+  .fx-essay-num{font-size:12px;letter-spacing:.2em;color:var(--fx-violet);font-weight:700}
+  .fx-essay h3{font-size:16.5px;margin:10px 0 10px;font-weight:800;line-height:1.5}
+  .fx-essay p{font-size:13.5px;color:var(--fx-sub)}
+  .fx-essay-by{display:flex;align-items:center;gap:9px;margin-top:16px;font-size:12.5px;color:#8391ad}
+
+  /* 作品墙 */
+  .fx-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .fx-wall-item{
+    position:relative;border-radius:13px;overflow:hidden;border:1px solid var(--fx-line);
+    aspect-ratio:1/1;transition:.25s;
+  }
+  .fx-wall-item.fx-wall-wide{grid-column:span 2;aspect-ratio:2/1}
+  .fx-wall-item svg{width:100%;height:100%;display:block}
+  .fx-wall-item:hover{transform:scale(1.02);border-color:rgba(0,229,160,.5)}
+  .fx-wall-cap{
+    position:absolute;left:0;right:0;bottom:0;z-index:2;padding:10px 12px;
+    font-size:12px;color:#e6edfb;background:linear-gradient(180deg,transparent,rgba(8,11,20,.85));
+  }
+
+  /* 评价 */
+  .fx-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .fx-review{
+    background:var(--fx-card);border:1px solid var(--fx-line);border-radius:16px;
+    padding:20px;display:flex;flex-direction:column;gap:12px;position:relative;
+  }
+  .fx-review::before{
+    content:"”";position:absolute;right:18px;top:6px;font-size:46px;line-height:1;
+    color:rgba(0,229,160,.16);font-family:Georgia,serif;
+  }
+  .fx-review-top{display:flex;align-items:center;gap:10px}
+  .fx-review-av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800;color:#08131a}
+  .fx-review-name{font-size:13.5px;font-weight:700}
+  .fx-review-role{font-size:11.5px;color:#7f8daa}
+  .fx-review p{font-size:13.5px;color:#c3cfe6;line-height:1.75}
+  .fx-stars{color:#ffc94d;font-size:12px;letter-spacing:2px}
+
+  /* FAQ */
+  .fx-faq{display:grid;gap:12px;max-width:900px;margin:0 auto}
+  .fx-faq details{
+    background:var(--fx-card);border:1px solid var(--fx-line);border-radius:13px;
+    padding:16px 20px;transition:.2s;
+  }
+  .fx-faq details[open]{border-color:rgba(0,229,160,.4);background:var(--fx-card2)}
+  .fx-faq summary{
+    cursor:pointer;font-size:15px;font-weight:700;list-style:none;
+    display:flex;justify-content:space-between;gap:16px;align-items:center;
+  }
+  .fx-faq summary::-webkit-details-marker{display:none}
+  .fx-faq summary::after{
+    content:"+";font-size:20px;color:var(--fx-mint);font-weight:400;transition:.2s;
+  }
+  .fx-faq details[open] summary::after{content:"−"}
+  .fx-faq p{color:var(--fx-sub);font-size:14px;margin-top:12px;line-height:1.8}
+
+  /* 动态 + 联系 */
+  .fx-two-col{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:start}
+  .fx-news{display:grid;gap:12px}
+  .fx-news-item{
+    display:grid;grid-template-columns:64px 1fr;gap:16px;padding:16px 18px;
+    background:var(--fx-card);border:1px solid var(--fx-line);border-radius:13px;transition:.22s;
+  }
+  .fx-news-item:hover{border-color:rgba(0,229,160,.4);transform:translateX(4px)}
+  .fx-news-date{
+    text-align:center;background:rgba(0,229,160,.1);border-radius:10px;padding:6px 0;
+    border:1px solid rgba(0,229,160,.24);
+  }
+  .fx-news-date b{display:block;font-size:18px;color:var(--fx-mint);line-height:1.2}
+  .fx-news-date span{font-size:10.5px;color:var(--fx-sub);letter-spacing:.06em}
+  .fx-news-item h3{font-size:15px;font-weight:700;margin-bottom:5px}
+  .fx-news-item p{font-size:13px;color:var(--fx-sub)}
+
+  .fx-contact-card{
+    background:linear-gradient(160deg,rgba(0,229,160,.1),rgba(139,123,255,.1));
+    border:1px solid var(--fx-line);border-radius:16px;padding:24px;
+  }
+  .fx-contact-card h3{font-size:17px;font-weight:800;margin-bottom:8px}
+  .fx-contact-card p{font-size:13.5px;color:var(--fx-sub);margin-bottom:16px}
+  .fx-contact-row{display:flex;align-items:center;gap:10px;font-size:13.5px;color:#cbd7ec;padding:9px 0;border-bottom:1px dashed var(--fx-line)}
+  .fx-contact-row:last-of-type{border-bottom:none}
+  .fx-contact-row i{color:var(--fx-mint);font-style:normal}
+
+  /* 页脚 */
+  .fx-footer{border-top:1px solid var(--fx-line);background:#0a0e19;padding:56px 0 30px;margin-top:20px}
+  .fx-foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+  .fx-foot-brand p{color:var(--fx-sub);font-size:13.5px;margin-top:14px;max-width:320px;line-height:1.8}
+  .fx-foot-col h4{font-size:14px;font-weight:800;margin-bottom:14px;color:#e8eefb}
+  .fx-foot-col a{display:block;font-size:13.5px;color:var(--fx-sub);padding:5px 0;transition:.2s}
+  .fx-foot-col a:hover{color:var(--fx-mint)}
+  .fx-foot-bottom{
+    margin-top:36px;padding-top:20px;border-top:1px solid var(--fx-line);
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:12.5px;color:#6b7894;
+  }
+
+  /* 回顶 */
+  .fx-top{
+    position:fixed;right:26px;bottom:28px;z-index:80;
+    width:46px;height:46px;border-radius:13px;display:grid;place-items:center;
+    background:var(--fx-card2);border:1px solid var(--fx-line);color:var(--fx-mint);
+    box-shadow:var(--fx-shadow);opacity:0;visibility:hidden;transform:translateY(12px);transition:.28s;
+  }
+  .fx-top.fx-show{opacity:1;visibility:visible;transform:none}
+  .fx-top:hover{background:var(--fx-mint);color:#08131a}
+
+  /* Toast / Modal */
+  .fx-toast{
+    position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+    background:#1e2740;border:1px solid rgba(0,229,160,.4);color:#eaf1ff;
+    padding:11px 20px;border-radius:11px;font-size:13.5px;z-index:200;
+    opacity:0;visibility:hidden;transition:.28s;box-shadow:var(--fx-shadow);
+  }
+  .fx-toast.fx-show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+  .fx-modal{
+    position:fixed;inset:0;z-index:180;display:none;place-items:center;padding:20px;
+    background:rgba(5,8,15,.72);backdrop-filter:blur(6px);
+  }
+  .fx-modal.fx-open{display:grid}
+  .fx-modal-box{
+    width:min(520px,100%);background:var(--fx-bg2);border:1px solid var(--fx-line);
+    border-radius:18px;padding:28px;box-shadow:var(--fx-shadow);max-height:88vh;overflow:auto;
+    animation:fxPop .26s ease;
+  }
+  @keyframes fxPop{from{transform:translateY(16px);opacity:0}}
+  .fx-modal-box h3{font-size:19px;font-weight:800;margin-bottom:8px}
+  .fx-modal-box p{font-size:13.5px;color:var(--fx-sub);margin-bottom:18px}
+  .fx-field{margin-bottom:14px}
+  .fx-field label{display:block;font-size:13px;color:#c3cfe6;margin-bottom:6px;font-weight:600}
+  .fx-field input,.fx-field textarea,.fx-field select{
+    width:100%;padding:10px 13px;border-radius:10px;background:rgba(255,255,255,.05);
+    border:1px solid var(--fx-line);color:var(--fx-text);font-size:14px;outline:none;
+    font-family:inherit;resize:vertical;
+  }
+  .fx-field input:focus,.fx-field textarea:focus,.fx-field select:focus{border-color:var(--fx-mint)}
+  .fx-modal-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:20px}
+  .fx-modal-close{
+    position:absolute;top:16px;right:18px;width:30px;height:30px;border-radius:8px;
+    display:grid;place-items:center;color:var(--fx-sub);
+  }
+  .fx-modal-close:hover{background:rgba(255,255,255,.08);color:#fff}
+
+  /* 响应式 */
+  @media(max-width:1024px){
+    .fx-hero-grid{grid-template-columns:1fr;gap:38px}
+    .fx-analyze-cols{grid-template-columns:1fr;gap:26px}
+    .fx-stream,.fx-topic-grid,.fx-essay-grid,.fx-review-grid{grid-template-columns:repeat(2,1fr)}
+    .fx-creator-grid{grid-template-columns:repeat(2,1fr)}
+    .fx-foot-top{grid-template-columns:1fr 1fr}
+    .fx-two-col{grid-template-columns:1fr}
+    .fx-focus-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:860px){
+    .fx-nav{
+      display:none;width:100%;flex-direction:column;gap:2px;
+      padding:10px 0 6px;border-top:1px solid var(--fx-line);
+    }
+    .fx-nav.fx-nav-open{display:flex}
+    .fx-burger{display:grid;margin-left:auto}
+    .fx-search{order:5;flex:1 1 100%}
+    .fx-header-inner{padding:10px 0;gap:12px}
+    html{scroll-padding-top:180px}
+  }
+  @media(max-width:640px){
+    .fx-sec{padding:52px 0}
+    .fx-stream,.fx-topic-grid,.fx-essay-grid,.fx-review-grid,.fx-creator-grid{grid-template-columns:1fr}
+    .fx-wall{grid-template-columns:repeat(2,1fr)}
+    .fx-wall-item.fx-wall-wide{grid-column:span 2}
+    .fx-hero-stats{grid-template-columns:1fr 1fr;gap:12px}
+    .fx-foot-top{grid-template-columns:1fr}
+    .fx-focus-mini{grid-template-columns:110px 1fr}
+    .fx-hero-float{position:static;margin-top:14px;left:0}
+    .fx-hero-ring{display:none}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="fx-sticky">
+  <div class="fx-announce">
+    <div class="fx-wrap fx-announce-inner">
+      <span class="fx-announce-badge">最新</span>
+      <div class="fx-announce-list">
+        <a class="fx-announce-item" href="#news">新增 <b>《反差构图十二讲》</b> 第 9 讲已上线</a>
+        <a class="fx-announce-item" href="#topic">专题企划「静默与喧响」<b> 征稿中</b></a>
+        <a class="fx-announce-item" href="#news">2026 年度创作者扶持计划 <b>报名开启</b></a>
+      </div>
+      <a class="fx-announce-more" href="#news">全部更新 →</a>
+    </div>
+  </div>
+
+  <header class="fx-header">
+    <div class="fx-wrap fx-header-inner">
+      <a class="fx-logo" href="#top" aria-label="极品在线反差官方网站首页">
+        <span class="fx-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 18 L12 5 L18 18 Z" stroke="#06131a" stroke-width="2.2" stroke-linejoin="round"/>
+            <circle cx="12" cy="15" r="1.8" fill="#06131a"/>
+          </svg>
+        </span>
+        <span>
+          <span class="fx-logo-txt">极品<em>在线反差</em></span>
+          <span class="fx-logo-sub">FANCHA IMAGE</span>
+        </span>
+      </a>
+
+      <nav class="fx-nav" id="fxNav">
+        <a href="#top" class="fx-nav-on">首页</a>
+        <a href="#focus">焦点内容</a>
+        <a href="#stream">热门内容</a>
+        <a href="#topic">专题企划</a>
+        <a href="#creator">创作者</a>
+        <a href="#news">企业动态</a>
+        <a href="#faq">帮助</a>
+        <a href="#contact">联系</a>
+      </nav>
+
+      <div class="fx-search">
+        <input type="text" id="fxSearchInput" placeholder="搜索反差内容 / 创作者" autocomplete="off" aria-label="站内搜索">
+        <button class="fx-search-btn" id="fxSearchBtn" aria-label="搜索">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        </button>
+        <div class="fx-search-tip" id="fxSearchTip"></div>
+      </div>
+
+      <button class="fx-burger" id="fxBurger" aria-label="展开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- ========== 首屏 ========== -->
+  <section class="fx-hero">
+    <div class="fx-wrap fx-hero-grid">
+      <div>
+        <span class="fx-hero-badge"><i></i>品牌官方网站 · 持续运营中</span>
+        <h1 class="fx-h1">极品在线反差</h1>
+        <p class="fx-hero-slogan">在反差之间，看见内容最真实的<b>张力</b></p>
+        <p class="fx-hero-intro">
+          作为国内专注反差风格影像的品牌平台，我们以官方网站形态持续输出原创、正版、高清的精品内容，
+          连接创作者与观众，构建值得信赖的内容生态。
+        </p>
+        <div class="fx-hero-actions">
+          <a class="fx-btn fx-btn-primary" href="#stream">进入内容区
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+          <button class="fx-btn fx-btn-ghost" id="fxSubmitBtn">投稿入口</button>
+          <a class="fx-btn fx-btn-ghost" href="#creator">认识创作者</a>
+        </div>
+        <div class="fx-hero-stats">
+          <div class="fx-stat">
+            <div class="fx-stat-num"><span data-count="3260">0</span><span>+</span></div>
+            <div class="fx-stat-label">原创内容条目</div>
+          </div>
+          <div class="fx-stat">
+            <div class="fx-stat-num"><span data-count="186">0</span><span>位</span></div>
+            <div class="fx-stat-label">签约创作者</div>
+          </div>
+          <div class="fx-stat">
+            <div class="fx-stat-num"><span data-count="97">0</span><span>%</span></div>
+            <div class="fx-stat-label">用户口碑好评</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fx-hero-visual">
+        <div class="fx-hero-ring"></div>
+        <div class="fx-hero-frame">
+          <svg viewBox="0 0 640 400" role="img" aria-label="极品在线反差品牌主视觉：明暗分割的影像空间">
+            <defs>
+              <linearGradient id="fxHeroA" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#12203a"/><stop offset="1" stop-color="#0a1020"/>
+              </linearGradient>
+              <linearGradient id="fxHeroB" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#00e5a0"/><stop offset="1" stop-color="#8b7bff"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#fxHeroA)"/>
+            <g opacity=".55" stroke="#2a3a5c" stroke-width="1">
+              <path d="M0 80h640M0 160h640M0 240h640M0 320h640"/>
+              <path d="M80 0v400M160 0v400M240 0v400M320 0v400M400 0v400M480 0v400M560 0v400"/>
+            </g>
+            <circle cx="450" cy="130" r="96" fill="url(#fxHeroB)" opacity=".24"/>
+            <circle cx="450" cy="130" r="56" fill="url(#fxHeroB)" opacity=".7"/>
+            <circle cx="450" cy="130" r="56" fill="none" stroke="#d6fff2" stroke-width="1.4" opacity=".8"/>
+            <path d="M120 330 L210 170 L300 330 Z" fill="#ff4d6d" opacity=".82"/>
+            <path d="M120 330 L210 170 L300 330 Z" fill="none" stroke="#ffd0d9" stroke-width="1.6"/>
+            <path d="M300 330 L390 170 L480 330 Z" fill="#00e5a0" opacity=".7"/>
+            <path d="M300 330 L390 170 L480 330 Z" fill="none" stroke="#c9ffe9" stroke-width="1.6"/>
+            <rect x="430" y="230" width="130" height="84" rx="10" fill="#151c31" stroke="#8b7bff" stroke-width="1.5"/>
+            <path d="M470 272 l14 -18 l12 14 l10 -12 l14 22 z" fill="#8b7bff" opacity=".9"/>
+            <circle cx="455" cy="252" r="6" fill="#ff4d6d"/>
+            <text x="36" y="60" fill="#8fa4c6" font-size="13" font-family="monospace" letter-spacing="3">FANCHA / 001</text>
+            <text x="36" y="370" fill="#00e5a0" font-size="15" font-family="monospace" letter-spacing="4">LIGHT × SHADOW</text>
+          </svg>
+        </div>
+        <div class="fx-hero-float">
+          <span class="fx-hero-float-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <div>
+            <h4>本周焦点首映</h4>
+            <p>《同一张脸的两面》 · 12:48</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 深度解析 ========== -->
+  <section class="fx-sec fx-analyze" id="about">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Brand Insight</span>
+        <h2 class="fx-h2">关于「极品在线反差」的<span class="fx-hl">定位与解析</span></h2>
+        <p class="fx-sec-desc">一个以反差美学为核心的视频品牌，如何在内容洪流中建立自己的坐标。</p>
+      </div>
+
+      <div class="fx-analyze-cols">
+        <div>
+          <p class="fx-analyze-lead">
+            「反差」不是一个流派的标签，而是一种观看方式：它把两种彼此拉扯的秩序放进同一个画框，
+            让观众在错位中感知真实。极品在线反差所做的，正是把这种观看方式变成可被持续生产、被认真对待的内容形态。
+          </p>
+          <p>
+            作为一家以影像为核心的企业，我们从 2019 年的三人小组起步，逐步搭建起完整的采编、制作、审校与分发流程。
+            官方网站上线至今，平台累计沉淀了三千余条原创内容，覆盖城市纪录、人物访谈、创作幕后、生活方式与实用技巧等多个方向。
+            我们不追逐单一爆款，而是相信<strong>持续运营</strong>的力量——把每一期内容做扎实，把每一位创作者陪到位。
+          </p>
+          <p>
+            在内容生态的搭建上，极品在线反差坚持三条底线：原创优先、正版授权、高清呈现。
+            所有上架作品均需通过内容合规与画质双重审校；所有合作创作者均签署明确的版权协议；
+            所有公开页面均标注内容来源与更新状态。这些看不见的工序，构成了品牌口碑的地基。
+          </p>
+          <p>
+            我们也清楚，反差内容天然容易滑向猎奇。因此平台在选题会上设有专门的「克制原则」：
+            任何以冲突为卖点的选题，必须先回答「它是否留下理解，而非只是刺激」。
+            这条原则让我们的内容在垂直领域中保持了相对稳定的调性，也让不少观众把这里当作一个可以慢慢看的地方。
+          </p>
+        </div>
+
+        <div>
+          <p>
+            从产品结构看，极品在线反差并非单纯的播放列表。首页承载焦点推荐与专题企划，内容区承担长尾沉淀，
+            创作者页负责人物档案与作品索引，企业动态区则记录品牌每一次公开动作。
+            四者相互咬合，形成可被检索、可被追溯的内容资产，而不是一次性消耗的信息流。
+          </p>
+          <p>
+            在社区层面，我们鼓励观众留下具体而非笼统的反馈。评论区不设人气排序，只按时间与相关性呈现；
+            每一条有效建议都会进入月度内容复盘会。正是这种近乎笨拙的机制，让「用户至上」不只是一句口号，
+            而成为可以被检验的工作习惯。
+          </p>
+          <ul class="fx-fact-list">
+            <li><b>01</b><span>原创优先：全部上架内容标注创作归属与授权状态，拒绝搬运与二次剪辑冒充原创。</span></li>
+            <li><b>02</b><span>高清标准：统一 1080P 起的内容清晰度门槛，重要专题提供更高码率版本。</span></li>
+            <li><b>03</b><span>垂直深耕：围绕反差美学建立选题库，避免内容泛化导致的品牌稀释。</span></li>
+            <li><b>04</b><span>社区共治：设立创作者议事会，每季度公开内容规则调整说明。</span></li>
+            <li><b>05</b><span>社会责任：每年至少两期公益影像企划，记录被忽略的日常面孔。</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 焦点内容 ========== -->
+  <section class="fx-sec" id="focus">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Focus</span>
+        <h2 class="fx-h2">焦点内容 · <span class="fx-hl">本周主推</span></h2>
+        <p class="fx-sec-desc">编辑部从近期更新中挑出的重点作品，兼顾观看体验与表达深度。</p>
+      </div>
+
+      <div class="fx-focus-grid">
+        <article class="fx-video-card fx-focus-main fx-video-card" data-card>
+          <div class="fx-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点作品《同一张脸的两面》封面：一半明亮一半暗沉的侧脸剪影">
+              <defs>
+                <linearGradient id="fxF1L" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#f3f7ff"/><stop offset="1" stop-color="#b9c8e6"/>
+                </linearGradient>
+                <linearGradient id="fxF1R" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#1b2338"/><stop offset="1" stop-color="#0a0f1d"/>
+                </linearGradient>
+              </defs>
+              <rect width="320" height="360" fill="url(#fxF1L)"/>
+              <rect x="320" width="320" height="360" fill="url(#fxF1R)"/>
+              <path d="M330 360 C330 250 300 220 300 160 C300 96 350 60 400 60 C470 60 500 120 500 180 C500 250 470 300 430 360 Z" fill="#0f1424" opacity=".9"/>
+              <path d="M310 360 C310 250 280 220 280 160 C280 96 330 60 380 60 C450 60 480 120 480 180 C480 250 450 300 410 360 Z" fill="#eef3ff" opacity=".16"/>
+              <circle cx="392" cy="140" r="9" fill="#00e5a0"/>
+              <path d="M40 300 q60 -40 120 0 t120 0" fill="none" stroke="#8b7bff" stroke-width="2" opacity=".7"/>
+              <path d="M360 60 v240" stroke="#00e5a0" stroke-width="1.4" stroke-dasharray="6 8" opacity=".7"/>
+              <text x="40" y="60" fill="#4b5a78" font-size="12" font-family="monospace" letter-spacing="3">FOCUS / 2026</text>
+              <text x="360" y="330" fill="#5f6f8f" font-size="12" font-family="monospace" letter-spacing="3">FANCHA FILM</text>
+            </svg>
+            <span class="fx-cover-tag">焦点首映</span>
+            <span class="fx-cover-time">12:48</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <div class="fx-video-tags"><span class="fx-tag fx-tag-mint">人物访谈</span><span class="fx-tag">反差叙事</span></div>
+            <h3 class="fx-video-title">同一张脸的两面：演员周砚的十二小时</h3>
+            <p class="fx-video-desc">
+              从清晨素颜的排练厅，到深夜收工的化妆间，我们跟拍了周砚完整的一天。
+              镜头记录下她在角色与自我之间反复切换的瞬间——那种被称作「反差」的东西，其实是一种长期训练出来的松弛。
+            </p>
+            <div class="fx-video-meta">
+              <span class="fx-avatar" style="background:linear-gradient(135deg,#00e5a0,#8b7bff)">砚</span>
+              <span>周砚工作室</span>
+              <span>·</span><span>2026-11-12</span>
+            </div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">2.4 万次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="fx-focus-side">
+          <article class="fx-focus-mini" data-card>
+            <div class="fx-cover">
+              <svg viewBox="0 0 320 200" role="img" aria-label="焦点作品《凌晨四点的菜市场》封面：昏黄灯光下的摊位与蒸汽">
+                <rect width="320" height="200" fill="#1a1508"/>
+                <circle cx="250" cy="60" r="46" fill="#ffb347" opacity=".2"/>
+                <rect x="20" y="120" width="280" height="14" rx="4" fill="#3b3221"/>
+                <rect x="40" y="90" width="60" height="30" rx="4" fill="#7a5a22"/>
+                <rect x="112" y="84" width="60" height="36" rx="4" fill="#9b7430"/>
+                <rect x="184" y="92" width="60" height="28" rx="4" fill="#6d5020"/>
+                <path d="M60 88 q6 -22 18 -22 q10 0 12 22" fill="none" stroke="#ffd79a" stroke-width="1.6" opacity=".8"/>
+                <path d="M132 82 q6 -24 18 -24 q10 0 12 24" fill="none" stroke="#ffd79a" stroke-width="1.6" opacity=".8"/>
+                <circle cx="252" cy="52" r="24" fill="#ffb347" opacity=".82"/>
+              </svg>
+              <span class="fx-cover-time">08:21</span>
+              <span class="fx-cover-play"><i>▶</i></span>
+            </div>
+            <div>
+              <h4>凌晨四点的菜市场，藏着一座城的呼吸</h4>
+              <p>城市探索 · 5.8 万次播放</p>
+            </div>
+          </article>
+
+          <article class="fx-focus-mini" data-card>
+            <div class="fx-cover">
+              <svg viewBox="0 0 320 200" role="img" aria-label="焦点作品《手作木工的第一天》封面：木屑与刻刀特写">
+                <rect width="320" height="200" fill="#2a1e14"/>
+                <rect x="0" y="130" width="320" height="70" fill="#3d2b1c"/>
+                <rect x="60" y="70" width="200" height="60" rx="6" fill="#8a6238"/>
+                <path d="M60 100h200" stroke="#5c3f24" stroke-width="1.6"/>
+                <path d="M110 70 v60 M160 70 v60 M210 70 v60" stroke="#5c3f24" stroke-width="1.2" opacity=".6"/>
+                <path d="M240 40 l30 20 l-14 18 z" fill="#cfd6e2"/>
+                <path d="M244 46 l18 12" stroke="#8a969f" stroke-width="1.4"/>
+                <circle cx="78" cy="52" r="3" fill="#c9a06a"/><circle cx="96" cy="44" r="2.4" fill="#c9a06a"/><circle cx="112" cy="54" r="2" fill="#c9a06a"/>
+              </svg>
+              <span class="fx-cover-time">15:06</span>
+              <span class="fx-cover-play"><i>▶</i></span>
+            </div>
+            <div>
+              <h4>手作木工的第一天：从一块废料开始</h4>
+              <p>创作幕后 · 3.2 万次播放</p>
+            </div>
+          </article>
+
+          <article class="fx-focus-mini" data-card>
+            <div class="fx-cover">
+              <svg viewBox="0 0 320 200" role="img" aria-label="焦点作品《极简客厅改造记录》封面：留白空间中的单椅与光影">
+                <rect width="320" height="200" fill="#eef1f5"/>
+                <rect x="0" y="150" width="320" height="50" fill="#d6dbe3"/>
+                <path d="M0 0 L180 0 L110 200 L0 200 Z" fill="#ffffff" opacity=".75"/>
+                <rect x="196" y="86" width="70" height="64" rx="8" fill="#8b7bff"/>
+                <rect x="206" y="96" width="50" height="34" rx="5" fill="#efe9ff"/>
+                <path d="M204 150 h54" stroke="#5a4fd0" stroke-width="3"/>
+                <circle cx="248" cy="42" r="18" fill="#ffd166"/>
+                <path d="M120 150 q0 -56 34 -56 q34 0 34 56" fill="none" stroke="#a8b3c4" stroke-width="2"/>
+              </svg>
+              <span class="fx-cover-time">10:33</span>
+              <span class="fx-cover-play"><i>▶</i></span>
+            </div>
+            <div>
+              <h4>极简客厅改造记录：把家减到刚刚好</h4>
+              <p>家居收纳 · 7.1 万次播放</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 热门视频流 ========== -->
+  <section class="fx-sec" id="stream" style="background:rgba(255,255,255,.018);border-top:1px solid var(--fx-line);border-bottom:1px solid var(--fx-line)">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Stream</span>
+        <h2 class="fx-h2">热门内容流 · <span class="fx-hl">持续更新</span></h2>
+        <p class="fx-sec-desc">六个方向，六种反差。所有作品均为平台原创或已获正版授权的高清成片。</p>
+      </div>
+
+      <div class="fx-stream">
+
+        <article class="fx-video-card" data-card data-keys="城市探索 反差 夜行 成都">
+          <div class="fx-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="《夜行成都：白天的巷子，晚上的江湖》封面：霓虹巷口与行人剪影">
+              <defs><linearGradient id="fxS1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141a2e"/><stop offset="1" stop-color="#241436"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#fxS1)"/>
+              <rect x="60" y="60" width="360" height="150" rx="8" fill="#1d2440"/>
+              <rect x="90" y="86" width="300" height="8" rx="4" fill="#ff4d6d" opacity=".85"/>
+              <rect x="90" y="112" width="230" height="6" rx="3" fill="#00e5a0" opacity=".8"/>
+              <rect x="90" y="136" width="270" height="6" rx="3" fill="#8b7bff" opacity=".75"/>
+              <rect x="90" y="160" width="180" height="6" rx="3" fill="#ffb347" opacity=".8"/>
+              <path d="M210 210 v-42 q0 -14 14 -14 q14 0 14 14 v42 z" fill="#0b0e18"/>
+              <circle cx="224" cy="150" r="10" fill="#0b0e18"/>
+              <path d="M70 210h340" stroke="#3a4770" stroke-width="2"/>
+              <circle cx="400" cy="52" r="20" fill="#ff4d6d" opacity=".28"/>
+            </svg>
+            <span class="fx-cover-tag">城市探索</span>
+            <span class="fx-cover-time">18:42</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <h3 class="fx-video-title">夜行成都：白天的巷子，晚上的江湖</h3>
+            <p class="fx-video-desc">同一条街，两种体温。我们连续拍了七个夜晚，只为记录灯亮起来之后的那一面。</p>
+            <div class="fx-video-tags"><span class="fx-tag">在地文化</span><span class="fx-tag fx-tag-mint">日常记录</span></div>
+            <div class="fx-video-meta"><span class="fx-avatar" style="background:linear-gradient(135deg,#ff4d6d,#ffb347)">南</span><span>南巷影像</span><span>·</span><span>11-15</span></div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">1.8 万次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fx-video-card" data-card data-keys="教程干货 反差 剪辑 教程">
+          <div class="fx-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="《反差剪辑十二讲：第一讲》封面：时间轴与明暗对比条">
+              <rect width="480" height="270" fill="#0d1a22"/>
+              <rect x="0" y="0" width="240" height="270" fill="#e9f6f1" opacity=".08"/>
+              <rect x="30" y="40" width="420" height="26" rx="6" fill="#16323d"/>
+              <rect x="30" y="40" width="150" height="26" rx="6" fill="#00e5a0" opacity=".8"/>
+              <rect x="30" y="82" width="420" height="26" rx="6" fill="#16323d"/>
+              <rect x="120" y="82" width="210" height="26" rx="6" fill="#8b7bff" opacity=".8"/>
+              <rect x="30" y="124" width="420" height="26" rx="6" fill="#16323d"/>
+              <rect x="80" y="124" width="90" height="26" rx="6" fill="#ff4d6d" opacity=".8"/>
+              <rect x="240" y="124" width="120" height="26" rx="6" fill="#ffb347" opacity=".8"/>
+              <path d="M30 176h420" stroke="#2e5566" stroke-width="1.2"/>
+              <path d="M150 44v-16 M240 86v-16 M330 128v-16" stroke="#9ff5d9" stroke-width="2"/>
+              <circle cx="150" cy="24" r="4" fill="#00e5a0"/><circle cx="240" cy="66" r="4" fill="#8b7bff"/><circle cx="330" cy="108" r="4" fill="#ff4d6d"/>
+              <text x="30" y="220" fill="#4f7385" font-size="13" font-family="monospace" letter-spacing="2">TIMELINE / CONTRAST CUT</text>
+            </svg>
+            <span class="fx-cover-tag">教程干货</span>
+            <span class="fx-cover-time">22:10</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <h3 class="fx-video-title">反差剪辑十二讲：用节奏制造情绪落差</h3>
+            <p class="fx-video-desc">从素材排序到转场取舍，讲清楚「反差」在剪辑台上到底是怎么被做出来的。</p>
+            <div class="fx-video-tags"><span class="fx-tag">实用技巧</span><span class="fx-tag fx-tag-mint">创作幕后</span></div>
+            <div class="fx-video-meta"><span class="fx-avatar" style="background:linear-gradient(135deg,#00e5a0,#43e0ff)">秦</span><span>秦叙剪辑室</span><span>·</span><span>11-14</span></div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">9632 次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fx-video-card" data-card data-keys="治愈影像 慢生活 咖啡馆">
+          <div class="fx-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="《开在巷尾的咖啡馆》封面：窗边咖啡杯与暖色光斑">
+              <defs><linearGradient id="fxS3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a2a1e"/><stop offset="1" stop-color="#22170f"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#fxS3)"/>
+              <rect x="40" y="30" width="200" height="150" rx="8" fill="#e6c79b" opacity=".16"/>
+              <path d="M40 30h200v150H40z" fill="none" stroke="#c9a06a" stroke-width="2" opacity=".5"/>
+              <circle cx="300" cy="120" r="52" fill="#c9a06a" opacity=".2"/>
+              <ellipse cx="300" cy="200" rx="90" ry="14" fill="#120c07"/>
+              <path d="M270 150h60v40a18 18 0 0 1-18 18h-24a18 18 0 0 1-18-18z" fill="#f3e7d4"/>
+              <path d="M330 158h16a12 12 0 0 1 0 24h-16" fill="none" stroke="#f3e7d4" stroke-width="5"/>
+              <path d="M284 132 q8 -16 0 -30 M304 132 q8 -16 0 -30" stroke="#e6c79b" stroke-width="2" fill="none" opacity=".7"/>
+              <circle cx="420" cy="60" r="26" fill="#ffb347" opacity=".5"/>
+              <path d="M380 210 q40 -30 80 0" fill="none" stroke="#5a4530" stroke-width="2"/>
+            </svg>
+            <span class="fx-cover-tag">治愈影像</span>
+            <span class="fx-cover-time">09:57</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <h3 class="fx-video-title">开在巷尾的咖啡馆：一个人的第十年</h3>
+            <p class="fx-video-desc">没有网红装修，也没有排队长龙。老板说，他只想过好每一天的下午三点。</p>
+            <div class="fx-video-tags"><span class="fx-tag fx-tag-pink">生活方式</span><span class="fx-tag">人物访谈</span></div>
+            <div class="fx-video-meta"><span class="fx-avatar" style="background:linear-gradient(135deg,#ffb347,#c9a06a)">阿</span><span>阿焙的记录本</span><span>·</span><span>11-13</span></div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">1.3 万次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fx-video-card" data-card data-keys="深度测评 科技 相机 测评">
+          <div class="fx-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="《胶片感与数码味》封面：两台相机并置与色卡">
+              <rect width="480" height="270" fill="#111726"/>
+              <rect x="40" y="80" width="150" height="110" rx="12" fill="#2b3450"/>
+              <circle cx="115" cy="135" r="36" fill="#0b0f1a" stroke="#8b7bff" stroke-width="3"/>
+              <circle cx="115" cy="135" r="16" fill="#8b7bff" opacity=".55"/>
+              <rect x="270" y="80" width="150" height="110" rx="12" fill="#2b3450"/>
+              <circle cx="345" cy="135" r="36" fill="#0b0f1a" stroke="#00e5a0" stroke-width="3"/>
+              <circle cx="345" cy="135" r="16" fill="#00e5a0" opacity=".55"/>
+              <rect x="200" y="112" width="60" height="44" rx="8" fill="#1a2136"/>
+              <path d="M230 112 v44" stroke="#4a5c84" stroke-width="2"/>
+              <rect x="40" y="216" width="360" height="16" rx="4" fill="#1a2136"/>
+              <rect x="40" y="216" width="60" height="16" rx="4" fill="#ff4d6d"/>
+              <rect x="100" y="216" width="60" height="16" rx="4" fill="#ffb347"/>
+              <rect x="160" y="216" width="60" height="16" rx="4" fill="#00e5a0"/>
+              <rect x="220" y="216" width="60" height="16" rx="4" fill="#8b7bff"/>
+              <rect x="280" y="216" width="60" height="16" rx="4" fill="#43e0ff"/>
+            </svg>
+            <span class="fx-cover-tag">深度测评</span>
+            <span class="fx-cover-time">16:25</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <h3 class="fx-video-title">胶片感与数码味：一次不讲参数的画质对比</h3>
+            <p class="fx-video-desc">不谈玄学，只放样片。同一场景、同一光线，两台机器的差异究竟在哪一眼就能看出来。</p>
+            <div class="fx-video-tags"><span class="fx-tag">科技前沿</span><span class="fx-tag fx-tag-mint">行业观察</span></div>
+            <div class="fx-video-meta"><span class="fx-avatar" style="background:linear-gradient(135deg,#8b7bff,#43e0ff)">陆</span><span>陆栖影像实验室</span><span>·</span><span>11-11</span></div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">7418 次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fx-video-card" data-card data-keys="健康运动 户外 跑步 反差">
+          <div class="fx-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="《跑过四季的人》封面：跑道与四季色带的渐变">
+              <rect width="480" height="270" fill="#0e1810"/>
+              <path d="M0 270 L120 120 L360 120 L480 270 Z" fill="#16301f"/>
+              <path d="M120 120 L60 270 M170 120 L150 270 M230 120 L230 270 M290 120 L310 270 M350 120 L400 270" stroke="#2c5a3a" stroke-width="2" opacity=".8"/>
+              <rect x="0" y="0" width="480" height="60" fill="#0a2416"/>
+              <circle cx="80" cy="34" r="18" fill="#9fe870" opacity=".7"/>
+              <circle cx="180" cy="34" r="18" fill="#ffb347" opacity=".7"/>
+              <circle cx="280" cy="34" r="18" fill="#43e0ff" opacity=".7"/>
+              <circle cx="380" cy="34" r="18" fill="#ff4d6d" opacity=".7"/>
+              <path d="M240 120 v-40 q0 -18 14 -18 q14 0 14 18 v40 z" fill="#dbe4f5" opacity=".9"/>
+              <circle cx="254" cy="52" r="10" fill="#dbe4f5" opacity=".9"/>
+            </svg>
+            <span class="fx-cover-tag">健康运动</span>
+            <span class="fx-cover-time">11:33</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <h3 class="fx-video-title">跑过四季的人：一个普通跑者的四年</h3>
+            <p class="fx-video-desc">配速没有奇迹，只有累计。我们把他的运动相机素材剪成了一条时间线。</p>
+            <div class="fx-video-tags"><span class="fx-tag fx-tag-mint">户外活动</span><span class="fx-tag">成长</span></div>
+            <div class="fx-video-meta"><span class="fx-avatar" style="background:linear-gradient(135deg,#9fe870,#2c5a3a)">徐</span><span>徐步履</span><span>·</span><span>11-09</span></div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">6235 次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fx-video-card" data-card data-keys="手工 手作DIY 陶艺 反差">
+          <div class="fx-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="《泥土与光》封面：转盘上的陶坯与手部剪影">
+              <rect width="480" height="270" fill="#1b1a26"/>
+              <ellipse cx="240" cy="220" rx="130" ry="20" fill="#121120"/>
+              <path d="M180 210 q0 -70 60 -70 q60 0 60 70 z" fill="#b9835a"/>
+              <ellipse cx="240" cy="140" rx="60" ry="14" fill="#d8a273"/>
+              <path d="M170 150 q-26 30 0 60" fill="none" stroke="#8b7bff" stroke-width="3" opacity=".8"/>
+              <path d="M310 150 q26 30 0 60" fill="none" stroke="#8b7bff" stroke-width="3" opacity=".8"/>
+              <circle cx="240" cy="70" r="34" fill="#ffb347" opacity=".22"/>
+              <path d="M226 70 h28 M240 56 v28" stroke="#ffd79a" stroke-width="2" opacity=".7"/>
+              <path d="M60 240 h360" stroke="#38334a" stroke-width="1.5"/>
+            </svg>
+            <span class="fx-cover-tag">手作DIY</span>
+            <span class="fx-cover-time">14:08</span>
+            <span class="fx-cover-play"><i>▶</i></span>
+          </div>
+          <div class="fx-video-body">
+            <h3 class="fx-video-title">泥土与光：在陶艺工作室待满一整天</h3>
+            <p class="fx-video-desc">拉坯机转了六小时，成功三个，碎掉五个。失败的部分我们也都留下了。</p>
+            <div class="fx-video-tags"><span class="fx-tag">艺术美学</span><span class="fx-tag fx-tag-mint">创作幕后</span></div>
+            <div class="fx-video-meta"><span class="fx-avatar" style="background:linear-gradient(135deg,#d8a273,#8b7bff)">陶</span><span>陶野工作室</span><span>·</span><span>11-07</span></div>
+            <div class="fx-video-foot">
+              <span class="fx-like-count">5104 次喜欢</span>
+              <div class="fx-act">
+                <button class="fx-like" aria-label="喜欢"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg><span>喜欢</span></button>
+                <button class="fx-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+                <button class="fx-share" aria-label="分享"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8 15.7 6.3M8.3 13.2l7.4 4.5"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 专题企划 ========== -->
+  <section class="fx-sec" id="topic">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Series</span>
+        <h2 class="fx-h2">专题企划 · <span class="fx-hl">成组地看</span></h2>
+        <p class="fx-sec-desc">比起单条视频，我们更愿意把相关内容连成一组，让反差被完整地看见。</p>
+      </div>
+
+      <div class="fx-topic-grid">
+        <article class="fx-topic">
+          <svg viewBox="0 0 400 300" role="img" aria-label="专题《静默与喧响》封面：一半空房间一半人群虚影">
+            <rect width="200" height="300" fill="#e8ecf4"/>
+            <rect x="200" width="200" height="300" fill="#12182a"/>
+            <rect x="30" y="150" width="110" height="8" rx="4" fill="#b6c2d6"/>
+            <rect x="60" y="110" width="50" height="40" rx="4" fill="#cdd6e5"/>
+            <circle cx="260" cy="120" r="26" fill="#8b7bff" opacity=".55"/>
+            <circle cx="310" cy="150" r="20" fill="#00e5a0" opacity=".5"/>
+            <circle cx="240" cy="180" r="16" fill="#ff4d6d" opacity=".5"/>
+            <path d="M200 0 v300" stroke="#00e5a0" stroke-width="1.6" stroke-dasharray="5 7"/>
+          </svg>
+          <div class="fx-topic-in">
+            <span class="fx-tag fx-tag-mint">主题征集</span>
+            <h3>静默与喧响</h3>
+            <p>记录那些在安静中积蓄、在喧闹中释放的瞬间。面向全站创作者开放，已收到 142 份投稿。</p>
+            <span class="fx-topic-status">更新中 · 第 3 期</span>
+          </div>
+        </article>
+
+        <article class="fx-topic">
+          <svg viewBox="0 0 400 300" role="img" aria-label="专题《一个人的手艺》封面：木工台与工具剪影">
+            <rect width="400" height="300" fill="#241a12"/>
+            <rect x="0" y="210" width="400" height="90" fill="#3a2919"/>
+            <rect x="50" y="160" width="300" height="16" rx="4" fill="#7a5a34"/>
+            <rect x="90" y="120" width="14" height="46" rx="3" fill="#c9a06a"/>
+            <path d="M150 160 l26 -52 l26 52 z" fill="#cfd6e2"/>
+            <rect x="250" y="120" width="60" height="40" rx="5" fill="#8a6238"/>
+            <circle cx="330" cy="90" r="30" fill="#ffb347" opacity=".2"/>
+            <path d="M40 250 h320" stroke="#5c3f24" stroke-width="2"/>
+          </svg>
+          <div class="fx-topic-in">
+            <span class="fx-tag">人物系列</span>
+            <h3>一个人的手艺</h3>
+            <p>六位独立手艺人，六段安静的坚持。他们用最慢的方式，回答关于「值得」的问题。</p>
+            <span class="fx-topic-status">已完结 · 共 6 集</span>
+          </div>
+        </article>
+
+        <article class="fx-topic">
+          <svg viewBox="0 0 400 300" role="img" aria-label="专题《城市的另一面》封面：白天地图与夜间灯网叠加">
+            <rect width="400" height="300" fill="#0d1522"/>
+            <g stroke="#1e3049" stroke-width="1.4">
+              <path d="M0 60h400M0 130h400M0 200h400M80 0v300M160 0v300M240 0v300M320 0v300"/>
+            </g>
+            <path d="M80 60 L160 130 L240 90 L320 160" stroke="#00e5a0" stroke-width="2.4" fill="none"/>
+            <circle cx="80" cy="60" r="7" fill="#00e5a0"/>
+            <circle cx="320" cy="160" r="7" fill="#ff4d6d"/>
+            <path d="M240 90 q40 -40 80 -30" stroke="#8b7bff" stroke-width="2" fill="none" opacity=".8"/>
+            <circle cx="360" cy="60" r="20" fill="#ffb347" opacity=".25"/>
+            <rect x="30" y="240" width="110" height="30" rx="6" fill="#1b2a3f"/>
+            <rect x="150" y="240" width="80" height="30" rx="6" fill="#1b2a3f"/>
+          </svg>
+          <div class="fx-topic-in">
+            <span class="fx-tag fx-tag-pink">地域企划</span>
+            <h3>城市的另一面</h3>
+            <p>跟着本地创作者，走完那些不在攻略里的路线。目前已解锁 4 座城市，下一站由你投票决定。</p>
+            <span class="fx-topic-status">进行中 · 4/8 城市</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 创作者 ========== -->
+  <section class="fx-sec" id="creator" style="background:rgba(255,255,255,.018);border-top:1px solid var(--fx-line);border-bottom:1px solid var(--fx-line)">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Creators</span>
+        <h2 class="fx-h2">创作者矩阵 · <span class="fx-hl">内容的源头</span></h2>
+        <p class="fx-sec-desc">点击任意创作者卡片，可查看其擅长方向与合作备注。我们相信，好的内容生态从尊重创作者开始。</p>
+      </div>
+
+      <div class="fx-creator-grid">
+        <article class="fx-creator" tabindex="0" data-name="周砚" data-field="人物访谈 / 表演记录" data-bio="前话剧演员，擅长用长镜头捕捉人物状态。合作过 20 余位幕后工作者，作品以克制的情绪表达见长。">
+          <div class="fx-creator-av" style="background:linear-gradient(135deg,#00e5a0,#8b7bff)">砚</div>
+          <h3>周砚</h3>
+          <div class="fx-c-field">人物访谈 / 表演记录</div>
+          <p>前话剧演员，擅长用长镜头捕捉人物状态，作品以克制的情绪表达见长。</p>
+          <div class="fx-creator-stats">
+            <span><b>48</b>作品</span><span><b>12.6万</b>关注</span>
+          </div>
+        </article>
+
+        <article class="fx-creator" tabindex="0" data-name="南巷影像" data-field="城市探索 / 在地文化" data-bio="扎根西南的纪录片小组，成员三人。坚持夜间拍摄与现场收音，代表系列《夜行》已更新至第三季。">
+          <div class="fx-creator-av" style="background:linear-gradient(135deg,#ff4d6d,#ffb347)">南</div>
+          <h3>南巷影像</h3>
+          <div class="fx-c-field">城市探索 / 在地文化</div>
+          <p>扎根西南的纪录片小组，坚持夜间拍摄与现场收音，代表系列《夜行》。</p>
+          <div class="fx-creator-stats">
+            <span><b>36</b>作品</span><span><b>9.8万</b>关注</span>
+          </div>
+        </article>
+
+        <article class="fx-creator" tabindex="0" data-name="秦叙剪辑室" data-field="教程干货 / 后期制作" data-bio="十年剪辑师，服务过商业广告与独立短片。擅长把复杂流程拆成可执行步骤，课程以「不废话」著称。">
+          <div class="fx-creator-av" style="background:linear-gradient(135deg,#00e5a0,#43e0ff)">秦</div>
+          <h3>秦叙剪辑室</h3>
+          <div class="fx-c-field">教程干货 / 后期制作</div>
+          <p>十年剪辑师，擅长把复杂流程拆成可执行步骤，课程以「不废话」著称。</p>
+          <div class="fx-creator-stats">
+            <span><b>62</b>作品</span><span><b>15.2万</b>关注</span>
+          </div>
+        </article>
+
+        <article class="fx-creator" tabindex="0" data-name="阿焙" data-field="生活方式 / 治愈影像" data-bio="咖啡馆常客，喜欢用固定机位拍日常。她坚持不做快节奏剪辑，认为「慢下来才看得见细节」。">
+          <div class="fx-creator-av" style="background:linear-gradient(135deg,#ffb347,#c9a06a)">阿</div>
+          <h3>阿焙</h3>
+          <div class="fx-c-field">生活方式 / 治愈影像</div>
+          <p>咖啡馆常客，喜欢用固定机位拍日常，坚持「慢下来才看得见细节」。</p>
+          <div class="fx-creator-stats">
+            <span><b>54</b>作品</span><span><b>8.4万</b>关注</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 随笔 + 作品墙 ========== -->
+  <section class="fx-sec" id="essay">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Notes</span>
+        <h2 class="fx-h2">幕后随笔与<span class="fx-hl">影像墙</span></h2>
+        <p class="fx-sec-desc">视频之外，还有一些没被剪进去的片段与心思，我们选择用文字和静态影像留下它们。</p>
+      </div>
+
+      <div class="fx-essay-grid">
+        <article class="fx-essay">
+          <div class="fx-essay-num">NOTE 01</div>
+          <h3>为了三秒的安静，我们等了两个小时</h3>
+          <p>拍周砚那期时，导演坚持要一个「什么也不发生」的镜头。于是全组在走廊里等了两个小时，只为了等窗外那班公交经过时的一瞬安静。后来这帧成了片头。</p>
+          <div class="fx-essay-by"><span class="fx-avatar" style="background:#00e5a0">编</span>编辑部 · 11 月 12 日</div>
+        </article>
+        <article class="fx-essay">
+          <div class="fx-essay-num">NOTE 02</div>
+          <h3>关于「反差」这件事，我们还在学</h3>
+          <p>反差不是把两样东西硬拼在一起，而是找到它们之间那条本已存在的线。这条线有时是时间，有时是地点，有时只是一个眼神。每期选题会，我们都在重新定义它。</p>
+          <div class="fx-essay-by"><span class="fx-avatar" style="background:#8b7bff">内</span>内容策划组 · 11 月 08 日</div>
+        </article>
+        <article class="fx-essay">
+          <div class="fx-essay-num">NOTE 03</div>
+          <h3>我们把废掉的素材也留了下来</h3>
+          <p>陶艺那期拍了六小时，成片只剩十四分钟。但我们把失败的拉坯片段单独整理成了一条侧记，因为很多观众说，那才是他们真正的日常。</p>
+          <div class="fx-essay-by"><span class="fx-avatar" style="background:#ffb347">摄</span>摄制组 · 11 月 07 日</div>
+        </article>
+      </div>
+
+      <div class="fx-wall" style="margin-top:34px">
+        <figure class="fx-wall-item fx-wall-wide">
+          <svg viewBox="0 0 400 200" role="img" aria-label="影像墙作品：清晨站台的长影与列车进站灯">
+            <rect width="400" height="200" fill="#101828"/>
+            <rect x="0" y="140" width="400" height="60" fill="#1a2338"/>
+            <path d="M0 140h400" stroke="#31405f" stroke-width="2"/>
+            <ellipse cx="120" cy="140" rx="30" ry="6" fill="#0a0f1a"/>
+            <path d="M120 140 v-58 q0 -14 12 -14 q12 0 12 14 v58" fill="#0a0f1a"/>
+            <circle cx="132" cy="66" r="11" fill="#0a0f1a"/>
+            <rect x="270" y="70" width="110" height="60" rx="8" fill="#243552"/>
+            <circle cx="296" cy="100" r="9" fill="#ffb347"/>
+            <circle cx="356" cy="100" r="9" fill="#ffb347"/>
+            <path d="M270 130h110" stroke="#31405f" stroke-width="2"/>
+          </svg>
+          <figcaption class="fx-wall-cap">清晨站台｜城市探索系列</figcaption>
+        </figure>
+        <figure class="fx-wall-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="影像墙作品：窗台植物与斜射日光">
+            <rect width="200" height="200" fill="#f1f4f8"/>
+            <path d="M0 0 L120 0 L40 200 L0 200 Z" fill="#ffffff" opacity=".8"/>
+            <rect x="60" y="120" width="80" height="50" rx="6" fill="#c98b5c"/>
+            <path d="M100 120 v-40" stroke="#4f8a5b" stroke-width="3"/>
+            <path d="M100 92 q-26 -10 -30 14 q26 6 30 -14" fill="#6fb37a"/>
+            <path d="M100 104 q26 -12 30 12 q-26 8 -30 -12" fill="#8fcb98"/>
+            <circle cx="164" cy="46" r="20" fill="#ffd166" opacity=".8"/>
+          </svg>
+          <figcaption class="fx-wall-cap">窗台｜日常记录</figcaption>
+        </figure>
+        <figure class="fx-wall-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="影像墙作品：旧书页与放大镜">
+            <rect width="200" height="200" fill="#33271c"/>
+            <rect x="30" y="40" width="140" height="120" rx="6" fill="#e8dcc3"/>
+            <g stroke="#b6a586" stroke-width="2">
+              <path d="M46 66h108M46 84h108M46 102h84M46 120h96"/>
+            </g>
+            <circle cx="128" cy="122" r="26" fill="none" stroke="#8b7bff" stroke-width="4"/>
+            <path d="M146 142 l22 22" stroke="#8b7bff" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+          <figcaption class="fx-wall-cap">旧书页｜阅读与生活</figcaption>
+        </figure>
+        <figure class="fx-wall-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="影像墙作品：雨夜车窗上的灯斑">
+            <rect width="200" height="200" fill="#0b1420"/>
+            <circle cx="60" cy="70" r="22" fill="#ff4d6d" opacity=".45"/>
+            <circle cx="130" cy="110" r="28" fill="#00e5a0" opacity=".35"/>
+            <circle cx="90" cy="150" r="18" fill="#ffb347" opacity=".4"/>
+            <g stroke="#3a5570" stroke-width="1.4" opacity=".8">
+              <path d="M0 40h200M0 80h200M0 120h200M0 160h200"/>
+            </g>
+            <path d="M0 0 L60 200" stroke="#dbe4f5" stroke-width="1" opacity=".2"/>
+          </svg>
+          <figcaption class="fx-wall-cap">雨夜车窗｜城市探索</figcaption>
+        </figure>
+        <figure class="fx-wall-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="影像墙作品：厨房里的蒸汽与铁锅">
+            <rect width="200" height="200" fill="#20180f"/>
+            <rect x="0" y="150" width="200" height="50" fill="#33271c"/>
+            <ellipse cx="100" cy="150" rx="62" ry="14" fill="#4a3a27"/>
+            <path d="M62 150 q0 -40 38 -40 q38 0 38 40 z" fill="#6b543a"/>
+            <path d="M84 108 q-10 -26 4 -40 M104 108 q10 -30 -4 -46 M124 108 q8 -20 -2 -34" stroke="#e0d3bd" stroke-width="2.4" fill="none" opacity=".55"/>
+          </svg>
+          <figcaption class="fx-wall-cap">灶台｜美食烹饪</figcaption>
+        </figure>
+        <figure class="fx-wall-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="影像墙作品：录音棚里的波形与麦克风">
+            <rect width="200" height="200" fill="#161a2b"/>
+            <g fill="#8b7bff" opacity=".85">
+              <rect x="30" y="86" width="6" height="28" rx="3"/><rect x="44" y="72" width="6" height="56" rx="3"/>
+              <rect x="58" y="94" width="6" height="12" rx="3"/><rect x="72" y="60" width="6" height="80" rx="3"/>
+              <rect x="86" y="80" width="6" height="40" rx="3"/><rect x="100" y="52" width="6" height="96" rx="3"/>
+              <rect x="114" y="88" width="6" height="24" rx="3"/><rect x="128" y="70" width="6" height="60" rx="3"/>
+              <rect x="142" y="92" width="6" height="16" rx="3"/><rect x="156" y="78" width="6" height="44" rx="3"/>
+            </g>
+            <circle cx="100" cy="160" r="16" fill="#00e5a0" opacity=".7"/>
+            <path d="M100 132 v-6" stroke="#00e5a0" stroke-width="3"/>
+          </svg>
+          <figcaption class="fx-wall-cap">录音棚｜音乐现场</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 评价 ========== -->
+  <section class="fx-sec" id="review" style="background:rgba(255,255,255,.018);border-top:1px solid var(--fx-line);border-bottom:1px solid var(--fx-line)">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Voice</span>
+        <h2 class="fx-h2">观众与创作者<span class="fx-hl">怎么说</span></h2>
+        <p class="fx-sec-desc">来自社区的真实反馈，我们原样保留，包括那些不那么客气的意见。</p>
+      </div>
+
+      <div class="fx-review-grid">
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#00e5a0,#43e0ff)">林</span>
+            <div><div class="fx-review-name">林间有风</div><div class="fx-review-role">观众 · 关注 2 年</div></div>
+          </div>
+          <div class="fx-stars">★★★★★</div>
+          <p>最喜欢的是这里不着急。别的平台都在抢前五秒，这里的片头可以安静地放完。看完一期，人是松下来的。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#ff4d6d,#ffb347)">二</span>
+            <div><div class="fx-review-name">二两米饭</div><div class="fx-review-role">创作者 · 入驻 8 个月</div></div>
+          </div>
+          <div class="fx-stars">★★★★★</div>
+          <p>作为新人，最感动的是编辑真的会看完我的投稿并给出修改意见，不是模板回复。这种被认真对待的感觉很难得。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#8b7bff,#43e0ff)">柯</span>
+            <div><div class="fx-review-name">柯西不等</div><div class="fx-review-role">观众 · 摄影爱好者</div></div>
+          </div>
+          <div class="fx-stars">★★★★☆</div>
+          <p>画质确实稳定，这点要给好评。唯一的建议是希望在移动端能补一个批量收藏的功能，现在一个个点有点慢。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#ffb347,#c9a06a)">慢</span>
+            <div><div class="fx-review-name">慢半拍的小陈</div><div class="fx-review-role">观众 · 通勤党</div></div>
+          </div>
+          <div class="fx-stars">★★★★★</div>
+          <p>每期教程都做了时间轴，适合我这种碎片时间看的人。剪辑那几讲我反复看了三遍，真的能落地。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#9fe870,#2c5a3a)">跑</span>
+            <div><div class="fx-review-name">跑者老周</div><div class="fx-review-role">观众 · 户外爱好者</div></div>
+          </div>
+          <div class="fx-stars">★★★★★</div>
+          <p>《跑过四季的人》那条我看了两遍。没有鸡血，只有真实的配速和伤病，反而让我第二天又出门跑了。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#d8a273,#8b7bff)">陶</span>
+            <div><div class="fx-review-name">陶子不圆</div><div class="fx-review-role">创作者 · 手作领域</div></div>
+          </div>
+          <div class="fx-stars">★★★★☆</div>
+          <p>专题企划的组稿方式很好，能把我不同时期的作品串成一条线。希望专题页能再增加一个创作者自述的位置。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#ffb347,#ff4d6d)">晚</span>
+            <div><div class="fx-review-name">晚风有信</div><div class="fx-review-role">观众 · 新用户</div></div>
+          </div>
+          <div class="fx-stars">★★★★★</div>
+          <p>朋友推荐的，说是「看起来不像视频网站的视频网站」。点进来发现确实，排版舒服，不吵。</p>
+        </article>
+        <article class="fx-review">
+          <div class="fx-review-top">
+            <span class="fx-review-av" style="background:linear-gradient(135deg,#43e0ff,#8b7bff)">剪</span>
+            <div><div class="fx-review-name">剪辑室的灯</div><div class="fx-review-role">创作者 · 后期方向</div></div>
+          </div>
+          <div class="fx-stars">★★★★★</div>
+          <p>平台对原创的保护是认真的，会主动帮忙处理被搬运的情况。就冲这一点，愿意长期在这里更新。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 动态 + 联系 ========== -->
+  <section class="fx-sec" id="news">
+    <div class="fx-wrap">
+      <div class="fx-sec-head">
+        <span class="fx-kicker">Updates</span>
+        <h2 class="fx-h2">企业动态与<span class="fx-hl">官方发布</span></h2>
+        <p class="fx-sec-desc">品牌的重要动作、内容更新节奏与社区规则调整，都会在这里留档。</p>
+      </div>
+
+      <div class="fx-two-col">
+        <div class="fx-news">
+          <article class="fx-news-item">
+            <div class="fx-news-date"><b>19</b><span>11月</span></div>
+            <div>
+              <h3>《反差构图十二讲》第九讲上线，配套练习素材同步开放</h3>
+              <p>本期聚焦「负空间与视觉重量的拉扯」，配套提供三组可下载练习素材，创作者可在投稿页申请。</p>
+            </div>
+          </article>
+          <article class="fx-news-item">
+            <div class="fx-news-date"><b>12</b><span>11月</span></div>
+            <div>
+              <h3>2026 年度创作者扶持计划开放报名</h3>
+              <p>面向全站创作者，提供制作资金、设备支持与专题曝光。报名截止 12 月 20 日，评审结果将在官网公示。</p>
+            </div>
+          </article>
+          <article class="fx-news-item">
+            <div class="fx-news-date"><b>05</b><span>11月</span></div>
+            <div>
+              <h3>专题企划「静默与喧响」开放第三轮征稿</h3>
+              <p>本轮征稿鼓励以声音为线索的影像表达，入选作品将进入首页焦点推荐并获得专题页独立展示位。</p>
+            </div>
+          </article>
+          <article class="fx-news-item">
+            <div class="fx-news-date"><b>28</b><span>10月</span></div>
+            <div>
+              <h3>社区内容规则更新说明（第四季度）</h3>
+              <p>明确原创标注规范与二次创作署名要求，同步上线更清晰的版权提示组件，欢迎大家查阅并提出意见。</p>
+            </div>
+          </article>
+          <article class="fx-news-item">
+            <div class="fx-news-date"><b>16</b><span>10月</span></div>
+            <div>
+              <h3>公益影像企划「被忽略的日常」第二期发布</h3>
+              <p>本期记录了三位夜班工作者，全部内容由平台自筹制作，支持在署名前提下进行非商业转载。</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="fx-contact-card" id="contact">
+          <h3>联系与合作</h3>
+          <p>内容合作、品牌联动、投稿咨询，欢迎通过以下方式与我们取得联系，工作日 24 小时内回复。</p>
+          <div class="fx-contact-row"><i>✉</i><span>合作邮箱：partner@fancha-image.cn</span></div>
+          <div class="fx-contact-row"><i>✎</i><span>投稿邮箱：submit@fancha-image.cn</span></div>
+          <div class="fx-contact-row"><i>☎</i><span>商务电话：028-6688-2200</span></div>
+          <div class="fx-contact-row"><i>⌂</i><span>办公地址：成都市青羊区影像产业园 B 座 7 层</span></div>
+          <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
+            <button class="fx-btn fx-btn-primary" id="fxCopyMail">复制合作邮箱</button>
+            <button class="fx-btn fx-btn-ghost" id="fxSubmitBtn2">我要投稿</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="fx-sec" id="faq" style="background:rgba(255,255,255,.018);border-top:1px solid var(--fx-line);border-bottom:1px solid var(--fx-line)">
+    <div class="fx-wrap">
+      <div class="fx-sec-head" style="text-align:center;margin-left:auto;margin-right:auto">
+        <span class="fx-kicker" style="justify-content:center">FAQ</span>
+        <h2 class="fx-h2">常见问题<span class="fx-hl">解答</span></h2>
+        <p class="fx-sec-desc">关于内容、投稿与版权，这里有你最常问到的几个问题。</p>
+      </div>
+
+      <div class="fx-faq">
+        <details open>
+          <summary>平台的内容都是原创的吗？</summary>
+          <p>平台所有公开内容均标注创作归属与授权状态。自制内容为编辑部或签约创作者原创，合作内容均已取得正版授权。若发现疑似搬运，可通过页面下方的反馈入口提交，我们会在三个工作日内核查并回复。</p>
+        </details>
+        <details>
+          <summary>如何向极品在线反差投稿？</summary>
+          <p>点击页面中的「投稿入口」按钮，填写作品链接、创作说明与授权声明即可。初审周期通常为五个工作日。通过初审后，编辑会联系你沟通修改方向与排期，未通过也会给出具体原因。</p>
+        </details>
+        <details>
+          <summary>投稿对画质和时长有要求吗？</summary>
+          <p>建议正片分辨率不低于 1080P，码率不低于 8Mbps，时长以 5 至 30 分钟为宜。教程类内容可适当延长。若素材为手机拍摄，请尽量保持稳定与光线充足，画质不是唯一标准，表达清晰更重要。</p>
+        </details>
+        <details>
+          <summary>创作者可以获得哪些支持？</summary>
+          <p>平台提供制作资金申请、设备借用、后期协作与专题曝光四类支持。年度扶持计划会额外提供长期合作名额。具体条款可在企业动态中的官方发布页面查阅，或直接联系合作邮箱咨询。</p>
+        </details>
+        <details>
+          <summary>可以在其他平台发布同一作品吗？</summary>
+          <p>可以。我们与创作者签署的是非独家授权协议，鼓励作品被更多人看到。唯一的要求是：在其他平台发布时，请保留原始创作署名，并注明首发平台信息，以便观众追溯来源。</p>
+        </details>
+        <details>
+          <summary>如何参与专题企划与比赛？</summary>
+          <p>每期专题会在首页公告条与企业动态中同步开放入口，按提示提交作品即可。部分企划设有投票环节，社区用户可参与评选。入选作品会获得专题页展示位与首页推荐资源。</p>
+        </details>
+        <details>
+          <summary>发现内容问题该如何反馈？</summary>
+          <p>每张内容卡片均提供举报与反馈入口，可选择版权、内容合规或其他类型。我们承诺所有反馈都会被人工查看，并在处理完成后告知结果。涉及版权争议的内容会先行下线核查。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="fx-footer">
+  <div class="fx-wrap">
+    <div class="fx-foot-top">
+      <div class="fx-foot-brand">
+        <a class="fx-logo" href="#top">
+          <span class="fx-logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 18 L12 5 L18 18 Z" stroke="#06131a" stroke-width="2.2" stroke-linejoin="round"/>
+              <circle cx="12" cy="15" r="1.8" fill="#06131a"/>
+            </svg>
+          </span>
+          <span>
+            <span class="fx-logo-txt">极品<em>在线反差</em></span>
+            <span class="fx-logo-sub">FANCHA IMAGE</span>
+          </span>
+        </a>
+        <p>极品在线反差官方网站，专注反差风格影像的品牌内容平台。以原创、正版、高清为底线，深耕垂直领域，与创作者共同构建值得信赖的内容生态。</p>
+      </div>
+      <div class="fx-foot-col">
+        <h4>内容</h4>
+        <a href="#focus">焦点内容</a>
+        <a href="#stream">热门内容流</a>
+        <a href="#topic">专题企划</a>
+        <a href="#essay">幕后随笔</a>
+      </div>
+      <div class="fx-foot-col">
+        <h4>社区</h4>
+        <a href="#creator">创作者矩阵</a>
+        <a href="#review">观众评价</a>
+        <a href="#faq">帮助中心</a>
+        <a href="#contact">投稿与合作</a>
+      </div>
+      <div class="fx-foot-col">
+        <h4>品牌</h4>
+        <a href="#about">品牌故事</a>
+        <a href="#news">企业动态</a>
+        <a href="#news">官方发布</a>
+        <a href="#contact">联系我们</a>
+      </div>
+    </div>
+    <div class="fx-foot-bottom">
+      <span>© 2019–2026 极品在线反差 版权所有 · 官方网站持续运营中</span>
+      <span>蜀ICP备 2026018842 号 · 川公网安备 51010502001884 号</span>
+    </div>
+    <div class="fx-foot-bottom" style="border-top:none;padding-top:6px;margin-top:6px">
+      <span>内容为平台原创或已获授权，转载请注明出处 · 用户至上，匠心制作</span>
+      <button id="fxReport" style="color:#7f8daa;border-bottom:1px dashed #4a5670">举报与反馈</button>
+    </div>
+  </div>
+</footer>
+
+<button class="fx-top" id="fxTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="fx-toast" id="fxToast"></div>
+
+<!-- 投稿弹窗 -->
+<div class="fx-modal" id="fxSubmitModal">
+  <div class="fx-modal-box" style="position:relative">
+    <button class="fx-modal-close" data-close aria-label="关闭">✕</button>
+    <h3>作品投稿</h3>
+    <p>填写基本信息，编辑会在五个工作日内查看并回复。请确保作品为原创或已获授权。</p>
+    <div class="fx-field">
+      <label for="fxSubName">作品名称</label>
+      <input id="fxSubName" type="text" placeholder="例如：同一张脸的两面">
+    </div>
+    <div class="fx-field">
+      <label for="fxSubType">内容方向</label>
+      <select id="fxSubType">
+        <option>人物访谈</option>
+        <option>城市探索</option>
+        <option>教程干货</option>
+        <option>生活方式</option>
+        <option>创作幕后</option>
+        <option>其他方向</option>
+      </select>
+    </div>
+    <div class="fx-field">
+      <label for="fxSubLink">作品链接</label>
+      <input id="fxSubLink" type="text" placeholder="请填写可访问的作品地址">
+    </div>
+    <div class="fx-field">
+      <label for="fxSubDesc">创作说明</label>
+      <textarea id="fxSubDesc" rows="3" placeholder="简单介绍作品背景、拍摄方式与授权情况"></textarea>
+    </div>
+    <div class="fx-modal-actions">
+      <button class="fx-btn fx-btn-ghost" data-close>取消</button>
+      <button class="fx-btn fx-btn-primary" id="fxSubSubmit">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<!-- 举报弹窗 -->
+<div class="fx-modal" id="fxReportModal">
+  <div class="fx-modal-box" style="position:relative">
+    <button class="fx-modal-close" data-close aria-label="关闭">✕</button>
+    <h3>举报与反馈</h3>
+    <p>请描述你遇到的问题，我们会人工核查并在处理完成后告知结果。</p>
+    <div class="fx-field">
+      <label for="fxRepType">问题类型</label>
+      <select id="fxRepType">
+        <option>版权问题</option>
+        <option>内容合规</option>
+        <option>功能建议</option>
+        <option>其他</option>
+      </select>
+    </div>
+    <div class="fx-field">
+      <label for="fxRepDesc">详细说明</label>
+      <textarea id="fxRepDesc" rows="4" placeholder="请尽量提供具体页面或作品名称"></textarea>
+    </div>
+    <div class="fx-modal-actions">
+      <button class="fx-btn fx-btn-ghost" data-close>取消</button>
+      <button class="fx-btn fx-btn-primary" id="fxRepSubmit">提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<!-- 作者弹窗 -->
+<div class="fx-modal" id="fxCreatorModal">
+  <div class="fx-modal-box" style="position:relative">
+    <button class="fx-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="fxCreName">创作者</h3>
+    <p id="fxCreField">擅长方向</p>
+    <p id="fxCreBio" style="color:#c3cfe6;font-size:14px"></p>
+    <div class="fx-modal-actions">
+      <button class="fx-btn fx-btn-ghost" data-close>关闭</button>
+      <button class="fx-btn fx-btn-primary" id="fxCreFollow">关注创作者</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toast = document.getElementById('fxToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('fx-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('fx-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('fxBurger');
+  var nav = document.getElementById('fxNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('fx-nav-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('fx-nav-open');
+      burger.setAttribute('aria-expanded','false');
+      Array.prototype.forEach.call(nav.querySelectorAll('a'), function(a){ a.classList.remove('fx-nav-on'); });
+      e.target.classList.add('fx-nav-on');
+    }
+  });
+
+  /* 搜索反馈 */
+  var input = document.getElementById('fxSearchInput');
+  var tip = document.getElementById('fxSearchTip');
+  var btn = document.getElementById('fxSearchBtn');
+  function searchTip(){
+    var q = input.value.trim();
+    if(!q){ tip.classList.remove('fx-open'); return; }
+    var cards = document.querySelectorAll('[data-keys]');
+    var hit = [];
+    Array.prototype.forEach.call(cards, function(c){
+      var keys = (c.getAttribute('data-keys') || '') + (c.querySelector('.fx-video-title') ? c.querySelector('.fx-video-title').textContent : '');
+      if(keys.indexOf(q) > -1){
+        var t = c.querySelector('.fx-video-title');
+        hit.push(t ? t.textContent : q);
+      }
+    });
+    var html = '';
+    if(hit.length){
+      html = '<p>找到 <b>' + hit.length + '</b> 条相关内容：</p>';
+      hit.slice(0,4).forEach(function(h){ html += '<p>· ' + h + '</p>'; });
+      html += '<p style="color:#6f7d99">按回车或点击按钮前往内容区查看</p>';
+    }else{
+      html = '<p>暂未找到与「<b>' + q + '</b>」直接匹配的内容</p><p style="color:#6f7d99">试试「城市探索」「剪辑」「访谈」</p>';
+    }
+    tip.innerHTML = html;
+    tip.classList.add('fx-open');
+  }
+  input.addEventListener('input', searchTip);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+      tip.classList.remove('fx-open');
+      document.getElementById('stream').scrollIntoView({behavior:'smooth'});
+      showToast('已为你跳转到内容区，可浏览全部更新');
+    }
+  });
+  btn.addEventListener('click', function(){
+    tip.classList.remove('fx-open');
+    document.getElementById('stream').scrollIntoView({behavior:'smooth'});
+    showToast(input.value.trim() ? '正在为你筛选相关内容' : '已跳转到热门内容流');
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.fx-search')) tip.classList.remove('fx-open');
+  });
+
+  /* 点赞 / 收藏 */
+  function parseCount(text){
+    var m = text.match(/([\d.]+)(万)?/);
+    if(!m) return 0;
+    var n = parseFloat(m[1]);
+    return m[2] ? Math.round(n * 10000) : n;
+  }
+  function fmt(n){
+    if(n >= 10000) return (n/10000).toFixed(1).replace(/\.0$/,'') + ' 万';
+    return n;
+  }
+  document.querySelectorAll('.fx-like').forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.stopPropagation();
+      var card = b.closest('.fx-video-card');
+      var label = card.querySelector('.fx-like-count');
+      var cur = parseCount(label.textContent);
+      if(b.classList.contains('fx-liked')){
+        b.classList.remove('fx-liked');
+        cur = Math.max(0, cur - 1);
+        showToast('已取消喜欢');
+      }else{
+        b.classList.add('fx-liked');
+        cur = cur + 1;
+        showToast('已加入你的喜欢列表');
+      }
+      label.textContent = fmt(cur) + ' 次喜欢';
+    });
+  });
+  document.querySelectorAll('.fx-save').forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.stopPropagation();
+      if(b.classList.contains('fx-saved')){
+        b.classList.remove('fx-saved');
+        showToast('已取消收藏');
+      }else{
+        b.classList.add('fx-saved');
+        showToast('已收藏，可在个人页查看');
+      }
+    });
+  });
+
+  /* 分享 */
+  document.querySelectorAll('.fx-share').forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.stopPropagation();
+      var card = b.closest('.fx-video-card');
+      var title = card.querySelector('.fx-video-title') ? card.querySelector('.fx-video-title').textContent : '极品在线反差';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(title + ' —— 极品在线反差官方网站').then(function(){
+          showToast('分享内容已复制到剪贴板');
+        }).catch(function(){
+          showToast('可长按页面地址进行分享');
+        });
+      }else{
+        showToast('可长按页面地址进行分享');
+      }
+    });
+  });
+
+  /* 数字滚动 */
+  var counted = false;
+  function countUp(){
+    if(counted) return;
+    var sec = document.querySelector('.fx-hero-stats');
+    if(!sec) return;
+    var rect = sec.getBoundingClientRect();
+    if(rect.top > window.innerHeight - 60) return;
+    counted = true;
+    sec.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var start = performance.now();
+      var dur = 1200;
+      function step(now){
+        var p = Math.min(1, (now - start) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased).toLocaleString('en-US');
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  window.addEventListener('scroll', countUp, {passive:true});
+  countUp();
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('fxTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500) topBtn.classList.add('fx-show');
+    else topBtn.classList.remove('fx-show');
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 弹窗通用 */
+  function openModal(id){
+    document.getElementById(id).classList.add('fx-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModals(){
+    document.querySelectorAll('.fx-modal').forEach(function(m){ m.classList.remove('fx-open'); });
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-close]').forEach(function(b){
+    b.addEventListener('click', closeModals);
+  });
+  document.querySelectorAll('.fx-modal').forEach(function(m){
+    m.addEventListener('click', function(e){ if(e.target === m) closeModals(); });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModals(); });
+
+  document.getElementById('fxSubmitBtn').addEventListener('click', function(){ openModal('fxSubmitModal'); });
+  document.getElementById('fxSubmitBtn2').addEventListener('click', function(){ openModal('fxSubmitModal'); });
+  document.getElementById('fxReport').addEventListener('click', function(){ openModal('fxReportModal'); });
+
+  document.getElementById('fxSubSubmit').addEventListener('click', function(){
+    var name = document.getElementById('fxSubName').value.trim();
+    if(!name){ showToast('请先填写作品名称'); return; }
+    closeModals();
+    showToast('投稿已提交，编辑将在五个工作日内回复');
+    document.getElementById('fxSubName').value = '';
+    document.getElementById('fxSubLink').value = '';
+    document.getElementById('fxSubDesc').value = '';
+  });
+  document.getElementById('fxRepSubmit').addEventListener('click', function(){
+    closeModals();
+    showToast('反馈已收到，我们会尽快核查');
+    document.getElementById('fxRepDesc').value = '';
+  });
+
+  /* 复制邮箱 */
+  document.getElementById('fxCopyMail').addEventListener('click', function(){
+    var mail = 'partner@fancha-image.cn';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(mail).then(function(){ showToast('合作邮箱已复制：' + mail); })
+      .catch(function(){ showToast('合作邮箱：' + mail); });
+    }else{
+      showToast('合作邮箱：' + mail);
+    }
+  });
+
+  /* 创作者弹窗 */
+  var followBtn = document.getElementById('fxCreFollow');
+  document.querySelectorAll('.fx-creator').forEach(function(c){
+    function open(){
+      document.getElementById('fxCreName').textContent = c.getAttribute('data-name');
+      document.getElementById('fxCreField').textContent = c.getAttribute('data-field');
+      document.getElementById('fxCreBio').textContent = c.getAttribute('data-bio');
+      followBtn.textContent = '关注创作者';
+      followBtn.classList.remove('fx-followed');
+      openModal('fxCreatorModal');
+    }
+    c.addEventListener('click', open);
+    c.addEventListener('keydown', function(e){ if(e.key === 'Enter') open(); });
+  });
+  followBtn.addEventListener('click', function(){
+    if(followBtn.classList.contains('fx-followed')){
+      followBtn.classList.remove('fx-followed');
+      followBtn.textContent = '关注创作者';
+      showToast('已取消关注');
+    }else{
+      followBtn.classList.add('fx-followed');
+      followBtn.textContent = '已关注';
+      showToast('已关注该创作者');
+    }
+  });
+
+  /* 搜索框占位轮换提示 */
+  var phs = ['搜索反差内容 / 创作者', '试试：城市探索', '试试：剪辑教程', '试试：人物访谈'];
+  var pi = 0;
+  setInterval(function(){
+    if(document.activeElement === input || input.value) return;
+    pi = (pi + 1) % phs.length;
+    input.setAttribute('placeholder', phs[pi]);
+  }, 3600);
+})();
+</script>
+</body>
+                </html>
